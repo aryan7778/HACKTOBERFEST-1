@@ -1,6 +1,9 @@
 # Hackoberfest 2020
 A repository by- [seemantaggarwal](https://github.com/seemantaggarwal) for beginners to create their first Pull Request.
 
+Maintained by - 
+#### https://www.youtube.com/channel/UCVSVEmV1IhO5FaL2HsSL0yQ (One stop for all your upcoming interviews)
+
 ## Steps to contribute.
 
 1. Register your GitHub ID on hackoberfest website. ( https://hacktoberfest.digitalocean.com/ )
