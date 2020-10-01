@@ -1,0 +1,53 @@
+#include <bits/stdc++.h>
+using namespace std;
+  vector<string> printss(string str,vector<string> pre){
+    if(str.length()==0){
+        
+        vector<string>blank={""};
+        return blank;
+        
+    }
+      char ch=str[0];
+      string sub=str.substr(1);
+      vector<string> part=printss(sub,pre);
+      vector<string> final;
+      int x=ch-'0';
+      string key=pre[x];
+      int i=0;
+      while(i<key.length())
+     { 
+       
+      for(string k:part){
+        final.push_back(key[i]+k);
+
+      }
+      i++;
+}
+return final;
+
+  }
+ 
+
+
+
+
+int main(){
+    string str;
+    getline(cin,str);
+    
+    vector<string>pre ={".;","abc","def","ghi","jkl","mno","pqrs","tu","vwx","yz"};
+
+    vector<string>final= printss (str,pre);
+    cout<<"[";
+     for(string k:final){
+       if(k==final[final.size()-1]){
+           cout<<k<<"]";
+       }else{
+            cout<<k<<", ";
+       }
+    
+    }
+    
+    
+    
+}
